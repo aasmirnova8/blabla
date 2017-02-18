@@ -1,0 +1,26 @@
+---
+title: "Untitled"
+author: "Alena Smirnova"
+date: "18 02 2017"
+output: html_document
+---
+
+
+## R Markdown
+
+```{r cars}
+summary(cars)
+library(igraph)
+par(mar=c(5.1,1,1,1), mfrow = c(2,2))
+plot(make_graph("Bull"), 
+     vertex.color = "lightblue", 
+     vertex.size = 40, 
+     vertex.label.cex = 1.5,
+     xlab = "(A)")
+plot(make_graph("Diamond"), 
+     vertex.color = "lightblue", 
+     vertex.size = 40, 
+     vertex.label.cex = 1.5,
+     xlab = "(B)")
+```
+
